@@ -15,6 +15,11 @@
   width: 100%;
 }
 
+svg {
+  width: 24px;
+  height: 24px;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -276,7 +281,6 @@ body {
 
 .clients {
   text-align: center;
-  list-style: none;
 }
 
 .button {

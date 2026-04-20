@@ -90,7 +90,12 @@
 }
 
 .banner {
-  background-color: var(--background-color);
+  background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/shapka.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--text);
   font-size: 44px;
   font-weight: 900;
@@ -267,6 +272,11 @@ body {
   color: var(--main-text);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.clients {
+  text-align: center;
+  list-style: none;
 }
 
 .button {

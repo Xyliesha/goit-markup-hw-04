@@ -9,15 +9,11 @@
   --main-font: "Roboto", sans-serif;
   --logo-font: "Raleway";
   --line-color: #ececec;
+  --svg-icon: #afb1b8;
 }
 
 .image {
   width: 100%;
-}
-
-svg {
-  width: 24px;
-  height: 24px;
 }
 
 .container {
@@ -208,9 +204,25 @@ body {
 }
 
 .svg-team {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
+  fill: var(--svg-icon);
+}
+
+.svg-div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.svg-team:hover {
+  fill: var(--button-fon);
+}
+
+.svg-team:focus {
+  fill: var(--button-fon);
 }
 
 .section-team-list {

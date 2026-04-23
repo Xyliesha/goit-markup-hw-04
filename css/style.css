@@ -14,6 +14,8 @@
 
 .image {
   width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .container {
@@ -324,12 +326,13 @@ body {
   font-size: 18px;
   line-height: 36px;
   font-weight: 700;
+  margin: 0 0 8px 0;
 }
 
 .portfolio-project-list {
   list-style: none;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 30px;
   margin: 0 auto;
@@ -339,25 +342,64 @@ body {
 }
 
 .section-team-li2 {
+  width: 370px;
   background-color: #ffffff;
   gap: 4px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #eeeeee;
 }
 
-.text-portfolio {
-  margin: 0 auto;
+.section-team-li2:hover {
+  box-shadow:
+    1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 
 .filters-list {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 9px;
+  gap: 12px;
   text-align: center;
   margin: 0 auto;
   padding-top: 94px;
   margin-bottom: 34px;
+}
+
+.button-portfolio {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  color: var(--text-headings);
+  background-color: var(--first-fon-button);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-portfolio:hover {
+  background-color: var(--button-fon);
+  color: var(--text);
+}
+
+.button-portfolio:focus {
+  background-color: var(--button-fon);
+  color: var(--text);
+}
+
+.card-portfolio {
+  padding: 20px 24px;
+  display: flex;
+  object-fit: cover;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .text-portfolio {

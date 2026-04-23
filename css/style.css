@@ -347,21 +347,26 @@ body {
 
 .clients {
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .svg-box-client {
   width: 170px;
   height: 92px;
-  display: flex;
+  display: inline-flex;
   border: 1px solid #afb1b8;
   border-radius: 1px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  gap: 30px;
+  margin-top: 50px;
 }
 
 .svg-clients {
+  fill: var(--svg-icon);
+  width: 40px;
+  height: 46px;
 }
 
 .svg-clients:hover {

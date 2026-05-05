@@ -19,7 +19,7 @@
 }
 
 .container {
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 25px;
   padding-top: 24px;
@@ -31,6 +31,13 @@
   padding-top: 94px;
   padding-bottom: 94px;
   margin: 0 auto;
+}
+
+.container-peculiarities {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  padding-top: 24px;
 }
 
 .header {
@@ -50,24 +57,28 @@
   margin-left: auto;
 }
 
-.svg-div-header {
+.contact {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  color: var(--main-text);
+  font-size: 14px;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.contact:hover {
+  color: var(--button-fon);
+}
+
+.contact:focus {
+  color: var(--button-fon);
 }
 
 .svg-header {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  fill: var(--svg-icon);
-}
-
-.svg-header:hover {
-  fill: var(--button-fon);
-}
-
-.svg-header:focus {
-  fill: var(--button-fon);
+  fill: currentColor;
 }
 
 .logo {
@@ -110,16 +121,6 @@
 }
 
 .nav-link.active {
-  color: var(--button-fon);
-}
-
-.contact {
-  color: var(--main-text);
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.contact:hover {
   color: var(--button-fon);
 }
 
@@ -172,7 +173,6 @@ body {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  gap: 10px;
   margin: 0;
 }
 
@@ -190,6 +190,7 @@ body {
 .section-list {
   list-style: none;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin: 0 auto;
@@ -212,7 +213,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-width: 250px;
+  width: 270px;
   padding: 20px;
 }
 
@@ -266,6 +267,10 @@ body {
 
 .icon-svg-link:hover {
   background-color: var(--button-fon);
+}
+
+.icon-svg-link:hover .svg-team {
+  fill: var(--text);
 }
 
 .svg-team {
@@ -433,7 +438,11 @@ body {
   height: 46px;
 }
 
-.svg-clients:hover {
+.svg-box-client:hover {
+  border-color: var(--button-fon);
+}
+
+.svg-box-client:hover .svg-clients {
   fill: var(--button-fon);
 }
 

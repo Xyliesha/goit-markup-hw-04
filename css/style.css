@@ -47,7 +47,7 @@
   margin: 0 auto;
   background-color: var(--text);
   border-bottom: 1px solid var(--line-color);
-  padding-left: 215px;
+  padding: 20px 15px;
 }
 
 .header-contact {
